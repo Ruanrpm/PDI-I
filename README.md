@@ -279,17 +279,6 @@ docker run --rm pdi-i:latest python -m pip check
 docker run --rm pdi-i:latest python -c "import tkinter, cv2, numpy, PIL, matplotlib, pygame; print('Importacoes OK')"
 ```
 
-## Como demonstrar o trabalho ao professor
-
-1. Carregue uma imagem e apresente cinza, negativo, Otsu e histograma.
-2. Compare média e mediana com tamanhos diferentes; execute Canny e ajuste os limiares.
-3. Aplique Otsu, demonstre as quatro operações morfológicas e analise os componentes.
-4. Explique BFS, contagem, área, lados expostos do perímetro e distância máxima do diâmetro.
-5. Abra a câmera, aplique modos de vídeo e selecione um objeto colorido para CamShift.
-6. Vincule uma música; retire e reapresente o objeto para mostrar pausa e retomada.
-7. Demonstre a referência amarela com um recorte, observando o escore e o limiar.
-8. Salve um resultado em `/dados/resultados` e encerre a janela.
-
 ## Referências técnicas
 
 - [Instalação do Docker Engine](https://docs.docker.com/engine/install/)
