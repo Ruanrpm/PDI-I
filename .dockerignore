@@ -1,0 +1,6 @@
+# Somente o código e as dependências entram na imagem.
+**
+!Dockerfile
+!requirements.txt
+!main.py
+!processamento.py

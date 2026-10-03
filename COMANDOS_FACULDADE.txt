@@ -1,0 +1,37 @@
+NA FACULDADE — preparação no Ubuntu/Debian (somente se necessário)
+Se Docker já estiver instalado, instale apenas git e xauth.
+
+sudo apt-get update
+sudo apt-get install -y git docker.io xauth
+sudo systemctl start docker
+sudo usermod -aG docker "$USER"
+
+Após adicionar o grupo, saia da sessão gráfica e faça login novamente.
+
+
+CLONAR E EXECUTAR — terminal do desktop Linux, com internet
+
+git clone https://github.com/Ruanrpm/PDI-I.git
+cd PDI-I
+bash executar-docker.sh --build
+
+
+ABRIR NOVAMENTE — dentro da pasta PDI-I
+
+bash executar-docker.sh
+
+
+ATUALIZAR — dentro da pasta PDI-I, com o app fechado
+
+git pull
+bash executar-docker.sh --build
+
+
+SEM INTERNET — caso tenha levado o TAR e a pasta do projeto
+
+docker load -i pdi-i-linux-amd64.tar
+bash executar-docker.sh
+
+
+No app, os arquivos da pasta do projeto aparecem em /dados.
+Execute sem sudo. Para encerrar, feche a janela.
