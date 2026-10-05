@@ -25,13 +25,3 @@ ATUALIZAR — dentro da pasta PDI-I, com o app fechado
 
 git pull
 bash executar-docker.sh --build
-
-
-SEM INTERNET — caso tenha levado o TAR e a pasta do projeto
-
-docker load -i pdi-i-linux-amd64.tar
-bash executar-docker.sh
-
-
-No app, os arquivos da pasta do projeto aparecem em /dados.
-Execute sem sudo. Para encerrar, feche a janela.
